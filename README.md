@@ -19,3 +19,24 @@
 
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
+
+## Time Estimates
+
+### Weather placeholder
+
+Estimate of time needed to complete: 2 hours.
+
+Start time: 1:00 pm
+
+Finish time: 2:07 pm
+
+Actual time needed to complete: 1 hour 7 minutes.
+
+### Error handling
+Estimate of time needed to complete: 2 hours.
+
+Start time: 2:08 pm
+
+Finish time: 2:07 pm
+
+Actual time needed to complete: 1 hour 7 minutes.
