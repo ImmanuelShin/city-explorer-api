@@ -36,7 +36,6 @@ app.get('/weather', (request, response, next) => {
     const forecasts = result.data.map((forecastData) => {
       return new Forecast(forecastData.weather.description, forecastData.datetime);
     });
-    console.log(forecasts);
     response.json(forecasts);
   } else {
     const error = new Error('City not found');
