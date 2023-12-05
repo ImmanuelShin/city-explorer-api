@@ -7,6 +7,8 @@ const express = require('express');
 const weatherData = require('./data/weather.json');
 const app = express();
 
+app.use(cors());
+
 class Forecast {
   constructor(description, date) {
     this.description = description;
@@ -20,7 +22,7 @@ app.get('/', (request, response) => {
 
 app.get('/weather', (request, response, next) => {
   const { lat, lon, searchQuery } = request.query;
-
+  console.log(lat, lon, searchQuery);
   const result = weatherData.find((city) => {
     return (
       city.lat === lat &&
@@ -34,8 +36,8 @@ app.get('/weather', (request, response, next) => {
     const forecasts = result.data.map((forecastData) => {
       return new Forecast(forecastData.weather.description, forecastData.datetime);
     });
-
-    response.send(forecasts);
+    console.log(forecasts);
+    response.json(forecasts);
   } else {
     const error = new Error('City not found');
     error.status = 404;
@@ -49,9 +51,6 @@ app.use((error, request, response, next) => {
     message: error.message || 'Internal Server Error',
   });
 });
-
-app.use(cors());
-
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
