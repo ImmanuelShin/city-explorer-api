@@ -17,7 +17,7 @@ class Forecast {
 }
 
 app.get('/', (request, response) => {
-  response.send('Hello from the backend server!');
+  response.send('Backend represent');
 });
 
 app.get('/weather', (request, response, next) => {
