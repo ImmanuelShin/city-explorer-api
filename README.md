@@ -28,11 +28,12 @@ Estimate of time needed to complete: 2 hours.
 
 Start time: 1:00 pm
 
-Finish time: 2:07 pm
+Finish time: 3:07 pm
 
-Actual time needed to complete: 1 hour 7 minutes.
+Actual time needed to complete: 2 hour 7 minutes.
 
 ### Error handling
+
 Estimate of time needed to complete: 2 hours.
 
 Start time: 2:08 pm
