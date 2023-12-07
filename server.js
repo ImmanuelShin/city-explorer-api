@@ -1,6 +1,6 @@
 require('dotenv').config();
 
-const PORT = process.env.PORT || 3000;
+const PORT = 3000;
 
 const weatherModule = require('./weather');
 const movieModule = require('./movies');
@@ -49,9 +49,11 @@ async function moviesHandler(request, response, next) {
 // Errors
 
 function errorHandler(error, request, response, next) {
-  console.error(error.stack);
-  const statusCode = error.status || 500;
-  const errorMessage = error.message || 'Internal Server Error';
+  console.log('helpas');
+  console.log(error.response.data);
+
+  const statusCode = error.response.data.status_code || 500;
+  const errorMessage = error.response.data.status_message || 'Internal Server Error';
 
   response.status(statusCode).json({
     errorCode: statusCode,
