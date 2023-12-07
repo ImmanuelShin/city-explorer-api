@@ -75,13 +75,3 @@ Start time: 10:33 am
 Finish time: 10:40 am
 
 Actual time needed to complete: 7 minutes.
-
-### Compartmentalize
-
-Estimate of time needed to complete: 1 hours.
-
-Start time: 10:45 am
-
-Finish time: 10:40 am
-
-Actual time needed to complete: 7 minutes.
