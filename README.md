@@ -5,17 +5,21 @@
 
 ## Overview
 <!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
+City Explorer API is the backend of City Explorer. It handles all of the API calls.
 
 ## Getting Started
 <!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
+To use this tool, change .env file to your specific ports and api keys.
 
 ## Architecture
 <!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
+Built with Axios, Cors, Express.
 
 ## Change Log
 <!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
 
 01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
+12-06-2023 4:08 - Server can handle location, weather, and movie api calls.
 
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
@@ -41,3 +45,23 @@ Start time: 3:10 pm
 Finish time: 3:17 pm
 
 Actual time needed to complete: 7 minutes.
+
+### Weather live
+
+Estimate of time needed to complete: 2 hours.
+
+Start time: 1:18 pm
+
+Finish time: 2:00 pm
+
+Actual time needed to complete: 42 minutes.
+
+### Movies
+
+Estimate of time needed to complete: 2 hours.
+
+Start time: 2:04 pm
+
+Finish time: 4:00 pm
+
+Actual time needed to complete: 1 hour 56 minutes.
