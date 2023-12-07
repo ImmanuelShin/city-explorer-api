@@ -50,8 +50,12 @@ async function moviesHandler(request, response, next) {
 
 function errorHandler(error, request, response, next) {
   console.error(error.stack);
-  response.status(error.status || 500).json({
-    message: error.message || 'Internal Server Error',
+  const statusCode = error.status || 500;
+  const errorMessage = error.message || 'Internal Server Error';
+
+  response.status(statusCode).json({
+    errorCode: statusCode,
+    message: errorMessage,
   });
 }
 
