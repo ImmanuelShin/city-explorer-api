@@ -80,8 +80,8 @@ Actual time needed to complete: 7 minutes.
 
 Estimate of time needed to complete: 1 hours.
 
-Start time: 10:45 am
+Start time: 11:30 am
 
-Finish time: 10:40 am
+Finish time: 2:00 pm
 
 Actual time needed to complete: 7 minutes.
