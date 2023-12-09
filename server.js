@@ -4,6 +4,7 @@ const PORT = process.env.PORT || 3000;
 
 const weatherModule = require('./modules/weather');
 const movieModule = require('./modules/movies');
+const yelpModule = require('./modules/yelp');
 
 const cors = require('cors');
 const express = require('express');
@@ -20,6 +21,7 @@ app.get('/', (request, response) => {
 
 app.get('/weather', weatherHandler);
 app.get('/movies', moviesHandler);
+app.get('/yelp', yelpHandler);
 
 app.use('*', errorHandler);
 
@@ -44,6 +46,16 @@ async function moviesHandler(request, response, next) {
   try {
     const movies = await movieModule.getMovies();
     response.send(movies);
+  } catch (error) {
+    next(error);
+  }
+}
+
+async function yelpHandler(request, response, next) {
+  const { lat, lon } = request.query;
+  try {
+    const restaurants = await yelpModule.getRestaurants(lat, lon);
+    response.json(restaurants);
   } catch (error) {
     next(error);
   }
